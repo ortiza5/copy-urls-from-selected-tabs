@@ -3,7 +3,7 @@
   "name": "Copy URLs from Selected Tabs",
   "version": "0.1",
   "author": "nomadic",
-  "description": "",
+  "description": "Copy the urls of all selected tabs.",
 
   "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
 
