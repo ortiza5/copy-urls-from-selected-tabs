@@ -15,7 +15,10 @@ function save_options() {
 function restore_options() {
   // Use default value color = 'red' and likesColor = true.
   chrome.storage.local.get({ separatorChars: ", \n" }, function (items) {
-    document.getElementById("separator").value = items.separatorChars;
+    const separator = document.getElementById("separator");
+    separator.value = items.separatorChars;
+    separator.focus();
+    separator.select();
   });
 }
 document.addEventListener("DOMContentLoaded", restore_options);

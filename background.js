@@ -3,7 +3,7 @@ function copySelectedTabUrls() {
   chrome.tabs.query({ highlighted: true }, (selectedTabs) => {
     let outputString = "";
     chrome.storage.local.get({ separatorChars: ", \n" }, (items) => {
-      const separator = items.separatorChars.toString();
+      const separator = items.separatorChars;
 
       // get the url of each tab
       selectedTabs.forEach((tab, idx, tabs) => {
@@ -55,3 +55,8 @@ chrome.commands.onCommand.addListener(function (command) {
 
 // Extension icon click listener
 chrome.browserAction.onClicked.addListener(copySelectedTabUrls);
+
+// Open the options on install
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.runtime.openOptionsPage();
+});
