@@ -5,7 +5,8 @@ A chromium based browser extension created for [@regberesford](https://forum.viv
 
 ## Features
 * Click the extension icon to copy the urls of selected tabs.
-* Keyboard shortcut option to perform the same action.
+* Keyboard shortcut option to perform the same action. (Default is: `Ctrl`+`Shift`+`X`)
+  * Make sure to set the keyboard shortcut to `Global` instead of `in Vivaldi` to get it to work
 
 ## Installation
 1. Load Unpacked Extension
