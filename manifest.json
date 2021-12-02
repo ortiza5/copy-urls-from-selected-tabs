@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Go to Parent Tab",
-  "version": "0.2",
+  "name": "Copy URLs from Selected Tabs",
+  "version": "0.1",
   "author": "nomadic",
-  "description": "A context menu option for switching to/recreating the tab the initiated the current tab.",
+  "description": "",
 
   "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
 
@@ -12,15 +12,15 @@
     "persistent": false
   },
 
-  "permissions": ["tabs", "contextMenus", "storage"],
+  "permissions": ["tabs"],
 
   "commands": {
-    "go-to-parent-tab": {
+    "copy-urls": {
       "suggested_key": {
-        "default": "Ctrl+Shift+P",
-        "mac": "Command+Shift+P"
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
       },
-      "description": "Go to the Parent Tab"
+      "description": "Copy urls from selected tabs"
     }
   }
 }
